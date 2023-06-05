@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>이미지 태그</h1>
+	<img src="../images/3.png" alt="강아지 이미지" ><br>
+	<img src="../images/abc.png" alt="이미지가 없습니다." ><br>
+	<img src="../images/back2.jpg" alt="겨울 나무 이미지" ><br>
+	<img src="../images/back2.jpg" alt="겨울 나무 이미지" width="350" title="툴팁작성"><br>
+	<img src="../images/back2.jpg" alt="겨울 나무 이미지" width="300" height="300"><br>
+	
+	<h1>audio태그</h1>
+	<audio src="../audio/Kalimba.mp3" controls="controls" autoplay="autoplay"
+		preload="auto" loop="loop"></audio>
+	<audio controls="controls">
+		<source src="../audio/Kalimba.mp3" type="audio/mp3">
+		<source src="../audio/Kalimba.ogg" type="audio/ogg">
+	</audio>	
+	
+	<!-- 각 브라우저가 지원하는 음악 파일 확장자 형식이 다르다
+	- mp3파일과 ogg 파일을 제공하면 모든 브라우저에서 음악을 재생할 수 있음	 -->
+	
+	<h1>video 태그</h1>
+	<video controls="controls">
+		<source src="../audio/Wildlife.mp4" type="video/mp4">
+		<source src="../audio/Wildlife.webm" type="video/webm">
+	</video>
+	<br>
+	<video controls="controls" poster="../images/bg.png" preload="auto"
+		autoplay="autoplay" loop="loop" width="500" height="400">
+		<source src="../audio/Wildlife.mp4" type="video/mp4">
+		<source src="../audio/Wildlife.webm" type="video/webm">
+	</video>
+	
+</body>
+</html>
+
+
+
+
+

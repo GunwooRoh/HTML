@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 4. 아이디 선택자 - 특정한 하나의 태그를 선택할 때 사용
+		#아이디
+	*/
+	#header{
+		background: green;
+	}
+	
+	/* 5. 클래스 선택자 - 특정한 클래스를 가지고 있는 태그를 선택
+		.클래스  */		
+	.select{
+		color: red;
+	}	
+		
+	/*  li 태그 중 class 속성으로 select를 가지는 태그 선택 */	
+	li.select{
+		background: pink;
+	}	
+	
+	/* 5. 속성 선택자 
+		선택자[속성] : 특정한 속성이 있는 태그를 선택함
+		선택자[속성=값] : 특정한 속성 안의 값이 특정 값과 같은 태그를 선택함
+	*/
+	
+	input[type=text]{
+		background: red;
+	}
+	input[type=password]{
+		background: blue;
+	}
+	
+	/* 마지막 두 태그 모두 type 속성이 text로 지정된 형태를 나타내지만
+	속성 선택자는 type 속성을 정확히 text로 입력한 태그만 인정함 */
+	input[type=text]{
+		border: 5px solid green;
+	}
+	
+	a[href]{
+		color: orange;
+	}
+</style>
+</head>
+<body>
+	<a href="cssTest1.html">cssTest1.html로 이동</a>
+	<br>
+	<a title="빈 태그">a태그입니다.</a>
+	<br>
+	
+	<div id="header">
+        <h1>Header</h1>
+    </div>
+
+	<ul>
+        <li class="select">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li class="select">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+    </ul>
+
+	<h1 class="item header">Lorem ipsum</h1>
+	<!-- => item 클래스와 header 클래스가 함께 적용됨 
+			class 속성은 공백으로 구분해서 여러 클래스를 사용할 수 있음	-->
+	
+	<h1 class="select">Lorem ipsum</h1>
+    <ul>
+        <li class="select">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+    </ul>
+	
+	<form>
+        <input type="text" />
+        <input type="password" />
+    </form>
+	
+	<form>
+        <input />
+        <input type="text" />
+    </form>
+	
+	
+</body>
+</html>

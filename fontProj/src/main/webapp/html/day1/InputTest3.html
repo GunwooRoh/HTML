@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="frm" method="get" action="b.jsp">
+		<textarea name="intro1"></textarea><br>
+		<textarea rows="5" cols="40">안녕</textarea><br>
+		<textarea rows="10" cols="70">
+			안녕하세요
+		</textarea><br>
+		<textarea rows="7" cols="90"></textarea><br><br>
+		
+		<select name="lang">
+			<option>java</option>
+			<option>c</option>
+			<option>c++</option>
+		</select><br>
+		<select name="lang2">
+			<option value="1">java</option>
+			<option value="2">c</option>
+			<option value="3">c++</option>
+		</select><br>
+		
+		<select name="lang3" multiple="multiple">
+			<option value="1">java</option>
+			<option value="2">c</option>
+			<option value="3">c++</option>
+		</select><br>
+		
+		<select name="lang4">
+			<optgroup label="language">
+				<option value="1">java</option>
+				<option value="2">c</option>
+				<option value="3">c++</option>
+			</optgroup>
+			<optgroup label="db">
+				<option value="4">oracle</option>
+				<option value="5">mysql</option>
+			</optgroup>			
+		</select><br>
+		
+		<button>전송</button>
+				
+	</form>
+</body>
+</html>
+
+<!-- b.jsp?intro1=11&lang=java&lang2=1&lang3=2&lang3=3&lang4=1 
+-->
+

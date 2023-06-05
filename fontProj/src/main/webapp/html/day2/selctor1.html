@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 1. 전체 선택자 
+		*
+	*/
+	*{
+		font-size: 20pt;
+	}
+	
+	/* 2. 태그 선택자 - 특정한 태그를 선택함
+	 	태그 */
+	h1{
+		color: blue;		
+	} 	
+	p{
+		background: yellow;
+	}
+	
+	/*  여러 개의 선택자를 한꺼번에 선택해서 스타일 속성을 적용할 때는 쉼표를 사용 */
+	h1, h2, div{
+		border: 1px solid green;
+	}
+</style>
+</head>
+<body>
+	<h1>Lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    <p>Nunc nec mauris nisl, ac volutpat odio. Quisque auctor ultricies leo eu rhoncus. 
+    
+    <h1>제목입니다</h1>
+	<p>문단1</p>
+	
+    <h2>h2태그</h2>
+    <div>div태그</div>
+    
+</body>
+</html>

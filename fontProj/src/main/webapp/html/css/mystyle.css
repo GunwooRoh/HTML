@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* mystyle.css */
+
+h2{
+	color:orange;
+}
+p{
+	color: purple;
+}
+div{
+	background: silver;
+	border: 2px solid red;
+}

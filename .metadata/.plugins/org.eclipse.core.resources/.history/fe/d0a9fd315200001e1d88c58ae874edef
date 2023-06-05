@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+	<fieldset>
+		<textarea rows="10" cols= "80">싸이월드 이용약관
+제 1 장 총칙
+제 1조 (목적)
+		</textarea><br>
+		<input type="checkbox">약관에 동의합니다<br>
+		<button>확인</button>
+	</fieldset>
+	</form><br>
+	
+	
+	<form>
+		<label for name ="name"> 상호 : </label> 
+		<input type="text" name ="name" name="name"><br>
+		<label for name = "food"> 업종 : </label>
+		<input type = "radio" name = "choiceFood" value = "1">한식
+		<input type = "radio" name = "choiceFood" value = "2">중식
+		<input type = "radio" name = "choiceFood" value = "3">일식
+		<input type = "radio" name = "choiceFood" value = "4">중식<br>
+		<label for name = "loc"> 지역 : </label>
+		<input type = "combobox" name = "location" value = "1">서울
+		<input type = "combobox" name = "location" value = "1">경기
+		<input type = "combobox" name = "location" value = "1">강원
+		
+		
+		
+	</form>
+	
+
+</body>
+</html>

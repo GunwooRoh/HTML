@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 6. 후손선택자 
+		선택자A 선택자B
+	*/
+	
+	#header h1{
+		color:red;
+	}
+	
+	#section h1{
+		color: orange;		
+	}
+	
+	 /* id 속성으로 header를 가지는 태그의 후손 위치에 있는 h1 태그와 그냥 h2 태그 선택 */
+	#header h1, h2{
+		background: yellow;
+	}
+	
+	/*  id 속성으로 header를 가지는 태그의 후손 위치에 있는 h1 태그와
+		id 속성으로 header를 가지는 태그의 후손 위치에 있는 h2 태그 선택 */
+	#header h1, #header h2{
+		border: 3px solid green;
+	}
+	
+	/* 6-2. 자식 선택자 
+		선택자A > 선택자B
+	*/
+	
+	#header > h1{
+		font-style: italic;
+	}
+	
+	#section > h1{
+		background: skyblue;
+	}
+	
+	/* 선택 안됨 - table 태그에 tbody 태그가 자동으로 추가되므로	 */
+	table>tr>th{
+		color: red;
+	}
+	
+	table tr>th{
+		background: pink;		
+	}
+	
+	table>tbody>tr>td{
+		background: orange;
+	}
+	
+	/* 7. 동위 선택자(형제 관계)
+	선택자A + 선택자B : 선택자A 바로 뒤에 위치하는 선택자B를 선택함
+	선택자A ~ 선택자B : 선택자A 뒤에 위치하는 모든 선택자B를 선택함 */
+	
+	h1 + h2 {
+		color: blue;
+	}
+	
+	h1 ~ h2{
+		border: 5px solid red; 
+	}
+	
+</style>
+</head>
+<body>
+	<div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>  
+	<div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+	<div id="section">
+        <h2 class="title">Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+	
+	<table>
+        <tr>
+            <th>Name</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>서울특별시 강남구 역삼동</td>
+        </tr>
+    </table>
+		
+	<h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+	
+	
+
+</body>
+</html>

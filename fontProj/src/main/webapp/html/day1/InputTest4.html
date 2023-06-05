@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>	
+	<form name="frmTest" method="get" action="a.jsp">
+		<fieldset>
+			<legend>기본 정보</legend>
+			<label for="name"> 이름 :</label> 
+			<input type="text" id="name" name="name" value="홍길동" readonly="readonly"><br>
+			아이디 : <input type="text" name="id" autofocus="autofocus"
+				required="required" placeholder="아이디를 입력하세요"><br>
+			비밀번호 : <input type="password" name="pwd"><br>
+		</fieldset>
+		<fieldset>
+			<legend>선택 정보</legend>
+			취미 :		
+			<input type="checkbox" name="hobby" id="sports1" value="1">
+			<label for="sports1">축구</label>
+				
+			<input type="checkbox" name="hobby" value="2">야구
+			<input type="checkbox" name="hobby" value="3">농구<br>
+			성별 : 
+			<label>
+				<input type="radio" name="gender" value="m">남자
+			</label>
+			<input type="radio" name="gender" value="f">여자<br>
+			업로드 파일 : <input type="file" name="upfile"><br>
+			hidden : <input type="hidden" name="no" value="7"><br>
+		</fieldset>
+		<br>
+		<fieldset>		
+			<input type="button" value="버튼">
+			<input type="submit" value="전송">
+			<input type="reset" value="취소">
+			<input type="image" value="이미지버튼" src="../images/login3.JPG">
+			<button>전송</button>
+			<button type="button">버튼</button>
+			<button type="reset">취소</button>
+		</fieldset>	
+	</form>
+	
+	
+</body>
+</html>
+
+<!-- a.jsp?name=hong&pwd=11&hobby=1&hobby=3&gender=f&upfile=win.ini&no=7
+-->
+

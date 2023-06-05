@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- form 태그 
+		클라이언트에서 입력한 정보를 서버의 특정 URL로 전달
+		입력상자들은 반드시 <form></form> 태그 사이에 들어가야 함
+		
+		form 태그의 method 속성
+	 [1] get - 사용자가 입력한 값들이 url 주소의 뒤에 붙어서 전송됨
+	 보안에 취약함, 최대 2kb까지만 가능
+	 [2] post - 사용자가 입력한 값들이 http 헤더안에 숨겨져서 전송됨
+	 보안에 좋다, 용량 제한이 없다
+		
+		action 속성
+ 		- 사용자가 입력한 값들은 action에 지정한 서버 페이지(jsp)로 전송됨
+	-->
+	
+	<form name="frmTest" method="get" action="a.jsp">
+		<label for="name"> 이름 :</label> 
+		<input type="text" id="name" name="name" ><br>
+		비밀번호 : <input type="password" name="pwd"><br>
+		취미 :		
+		<input type="checkbox" name="hobby" id="sports1" value="1">
+		<label for="sports1">축구</label>
+			
+		<input type="checkbox" name="hobby" value="2">야구
+		<input type="checkbox" name="hobby" value="3">농구<br>
+		성별 : 
+		<label>
+			<input type="radio" name="gender" value="m">남자
+		</label>
+		
+		<input type="radio" name="gender" value="f">여자<br>
+		업로드 파일 : <input type="file" name="upfile"><br>
+		hidden : <input type="hidden" name="no" value="7"><br>
+		<br>
+		<input type="button" value="버튼">
+		<input type="submit" value="전송">
+		<input type="reset" value="취소">
+		<input type="image" value="이미지버튼" src="../images/login3.JPG">
+		<button>전송</button>
+		<button type="button">버튼</button>
+		<button type="reset">취소</button>
+		
+	</form>
+	
+	
+</body>
+</html>
+
+<!-- a.jsp?name=hong&pwd=11&hobby=1&hobby=3&gender=f&upfile=win.ini&no=7
+-->

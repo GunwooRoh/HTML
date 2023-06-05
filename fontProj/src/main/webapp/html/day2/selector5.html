@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 10. 구조 선택자 
+		:first-child => 첫 번째에 위치하는 자식을 선택함		
+	*/
+	
+	li{
+		list-style: none;
+		padding: 15px;
+	}
+	
+	li:first-child {
+		border: 1px solid red;
+	}
+	li:last-child {
+		border: 5px solid blue;
+	}
+	
+	li:nth-child(2n) {
+		background: pink;
+	}
+	li:nth-child(2n+1) {
+		background: skyblue;
+	}
+	
+	li > a:first-child {
+		color: red;
+	}
+	/* => li 태그의 첫 번째 자식에 위치하는 a 태그를 선택했으니 모두 선택됨 */
+
+	/* 첫 번째 li 태그의 a 태그를 선택하려면 */
+	li:first-child > a{
+		border: 5px solid green;	
+	}
+	
+	/* 10-2. 형태 구조 선택자
+	 :first-of-type => 형제 관계 중에서 첫 번째로 등장하는 특정 태그를 선택  */
+	.div1 h1:first-of-type {
+		color: red;
+	}
+	.div1 h2:first-of-type {
+		color: red;
+	}
+	.div1 h3:first-of-type {
+		color: red;
+	}
+	
+	.div2 > *:first-of-type {
+		color: blue;
+	}
+	
+	/*같은 부모를 갖는 자식 중 첫번째 자식이 h2여야만
+	선택됨 => 이 예제에서는 선택안됨, h1이 첫째자식이므로 */
+	.div3 h2:first-child {
+		border: 3px solid green;
+	}	
+	/* => FIRST-CHILD 는 주로 같은 태그들이 자식일 때 선택하는 용도로 사용됨
+	예) 모두 li 중에 첫번째 자식을 찾거나, 모두 h1 중에 찾거나 하는 경우*/
+
+	h2:first-of-type {
+		color: orange;
+	} 
+</style>
+</head>
+<body>
+	<ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+	
+	<ul>
+        <li><a href="#">Condrasa</a></li>
+        <li><a href="#">Condrasa</a></li>
+        <li><a href="#">Condrasa</a></li>
+        <li><a href="#">Condrasa</a></li>
+        <li><a href="#">Condrasa</a></li>
+    </ul>
+	
+	<div class="div1">
+		<h1>Header - 1</h1>
+	    <h2>Header - 2</h2>
+	    <h3>Header - 3</h3>
+	    <h3>Header - 3</h3>
+	    <h2>Header - 2</h2>
+	    <h1>Header - 1</h1>		
+	</div>
+	<hr>
+	
+	<div class="div2">
+		<h1>Header - 1</h1>
+	    <h2>Header - 2</h2>
+	    <h3>Header - 3</h3>
+	    <h4>Header - 4</h4>
+	    <h5>Header - 5</h5>
+	    <h6>Header - 6</h6>		
+	</div>
+	<hr>
+	
+	<div class="div3">
+		<h1>Header - 1</h1>
+	    <h2>Header - 2</h2>
+	    <h3>Header - 3</h3>
+	    <h3>Header - 3</h3>
+	    <h2>Header - 2</h2>
+	    <h1>Header - 1</h1>
+	</div>
+</body>
+</html>
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+    textarea {
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <p style="text-align:left;">
+        <textarea rows="15" cols="100">
+            싸이월드 이용약관
+            제 1장 총칙
+            제 1조 (목적)
+        </textarea><br>
+    
+    <input type="checkbox" name="check" id="confirm" value="1">
+        <label for="confirm">확인</label>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <form>
+        <p style="text-align:left;">
+        <input  type=text  value = "1000"> 
+        <textarea rows="15" dir="ltr">
+            싸이월드 이용약관
+            제 1장 총칙
+            제 1조 (목적)
+        </textarea><br>
+    
+    <input type="checkbox" name="check" id="confirm" value="1">
+        <label for="confirm">확인</label>
+    
+    </form>
+</body>
+</html>
