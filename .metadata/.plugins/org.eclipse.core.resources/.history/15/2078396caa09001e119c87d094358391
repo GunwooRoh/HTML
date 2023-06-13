@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>2</title>
+  <form action>
+  <fieldset>
+    <input type='button' value='삭제' /> <input type='button' value='글목록' />
+  </fieldset>
+  </form>
+
+</head>
+<body>
+
+</body>
+</html>

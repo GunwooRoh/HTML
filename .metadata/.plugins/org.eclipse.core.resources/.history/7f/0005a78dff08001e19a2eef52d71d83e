@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <blockquote>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</blockquote>
+    <p><strong>There is no one who loves pain itself, who seeks after it and wants to have it. "Simply because it is pain."</strong></p>
+    <hr>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Curabitur vitae libero melesuada, ulktricies eros. sed, lobortis, ante</li>
+        <li>Aenean luctus erat ut mangna tincidunt, eget tempor felis tincidunt</li>
+        <li>Nunc elementum nisl at elit vehicula consectetur.</li>
+        <li>Nulla ac urna venenatis. pulvinar lectus a, tristiqueurna.</li>
+        <br>
+
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Curabitur vitae libero melesuada, ulktricies eros. sed, lobortis, ante</li>
+        <li>Aenean luctus erat ut mangna tincidunt, eget tempor felis tincidunt</li>
+        <li>Nunc elementum nisl at elit vehicula consectetur.</li>
+        <li>Nulla ac urna venenatis. pulvinar lectus a, tristiqueurna.</li>
+        <br>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Curabitur vitae libero melesuada, ulktricies eros. sed, lobortis, ante</li>
+        <li>Aenean luctus erat ut mangna tincidunt, eget tempor felis tincidunt</li>
+    </ul>
+    Generated 5 paragraphs, 128 words, 951 bytes of <a href="https://www.naver.com"> Naver</a>
+    <hr>
+    <i>ezen123@academy.com</i>
+
+
+
+</body>
+</html>

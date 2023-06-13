@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>입사지원서</title>
+</head>
+<body>
+    <h1 style="text-align: center">입사지원서</h1><br>
+    <table border="1" width="1000" height="300" align="center" style="text-align: center">
+        <tr height="12%">
+            <th style="background-color: lightgray" width="50%">성명</th>
+            <td width="25%"></td>
+        </tr>
+        <tr height="12%">
+            <th style="background-color: yellow" width="25%">근무기간</th>
+            <td width="25%"></td>
+            <th style="background-color: yellow" width="25%">근무부서/직책</th>
+            <td width="25%"></td>
+        </tr>
+        <tr height="12%">
+            <th style="background-color: yellow" width="25%">주요업무</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr height="12%">
+            <th colspan="4" style="background-color: yellow">업무상세내용 및 주요성과</th>
+        </tr>
+        <tr height="52%">
+            <td rowspan="5" colspan="4"></td>
+        </tr>
+    </table><br>
+    <table border="1" width="1000" height="300" align="center" style="text-align: center">
+        <tr height="12%">
+            <th style="background-color: yellow" width="25%">회사명</th>
+            <td width="25%"></td>
+            <th style="background-color: yellow" width="25%">주요 사업</th>
+            <td width="25%"></td>
+        </tr>
+        <tr height="12%">
+            <th style="background-color: yellow" width="25%">근무기간</th>
+            <td width="25%"></td>
+            <th style="background-color: yellow" width="25%">근무부서/직책</th>
+            <td width="25%"></td>
+        </tr>
+        <tr height="12%">
+            <th style="background-color: yellow" width="25%">주요업무</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr height="12%">
+            <th colspan="4" style="background-color: yellow">업무상세내용 및 주요성과</th>
+        </tr>
+        <tr height="52%">
+            <td rowspan="5" colspan="4"></td>
+        </tr>
+    </table><br>
+    <table border="1" width="1000" height="300" align="center" style="text-align: center">
+    <tr height="12%">
+        <th style="background-color: yellow" width="25%">회사명</th>
+        <td width="25%"></td>
+        <th style="background-color: yellow" width="25%">주요 사업</th>
+        <td width="25%"></td>
+    </tr>
+    <tr height="12%">
+        <th style="background-color: yellow" width="25%">근무기간</th>
+        <td width="25%"></td>
+        <th style="background-color: yellow" width="25%">근무부서/직책</th>
+        <td width="25%"></td>
+    </tr>
+    <tr height="12%">
+        <th style="background-color: yellow" width="25%">주요업무</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr height="12%">
+        <th colspan="4" style="background-color: yellow">업무상세내용 및 주요성과</th>
+    </tr>
+    <tr height="52%">
+        <td rowspan="5" colspan="4"></td>
+    </tr>
+</table>
+</body>
+</html>

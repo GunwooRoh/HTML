@@ -1,0 +1,16 @@
+<style type="text/css">
+div{
+width: 200px;
+height: 200px;border:solid gray 1px;
+}
+.red{background:red;}
+.green{background:green;}
+.blue{background:blue;}
+</style>
+</head>
+<body>
+<div id="targetDiv">
+</div>
+<input type="button" value="red">
+<input type="button" value="green">
+<input type="button" value="blue">

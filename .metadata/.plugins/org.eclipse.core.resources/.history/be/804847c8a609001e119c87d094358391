@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습</title>
+  <form action>
+    <input type='button' value='뒤로' /> <input type='button' value='앞으로' />
+    <input type='button' value='새로고침' /> <input type='button' value='네이버로 이동' />
+  </form>
+
+  <hr style="border: solid 1px red;">
+
+<body>
+  <h1 id="clock" style="color:black;">clock</h1>
+
+  <script>
+    var Target = document.getElementById("clock");
+    function clock() {
+      var time = new Date();
+
+      var year = time.getYear();
+      var month = time.getMonth();
+      var date = time.getDate();
+      var day = time.getDay();
+      var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
+      var seconds = time.getSeconds();
+
+      var ampm = hours < 12 ? '오전' : '오후'; // 오전/오후 구분
+
+      hours = hours % 12; // 12시간 형식으로 변경
+      hours = hours ? hours : 12; // 0시를 12시로 변경
+
+      Target.innerText =
+        `${year + 1900}년 ${month + 1}월 ${date}일 ${week[day]}요일 ` +
+        `${ampm} ${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+    }
+    clock();
+    setInterval(clock, 1000); // 1초마다 실행
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fontProj/src/main/webapp/html/NewFile3.html&apos; to &apos;ZC.html&apos;" description="Rename resource &apos;NewFile3.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/html/NewFile3.html" name="ZC.html" stamp="1686615595547" updateReferences="true"/>
+</session>
