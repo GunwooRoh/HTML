@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>selector1.html</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//전체 선택자
+		$('*').css('font-size','20px');
+		
+		//태그 선택자
+		$('h1').css('color','blue');
+		
+		//아이디 선택자
+		$('#ph1').css('color','red');
+		
+		//클래스 선택자
+		$('.ph').css('border','1px solid red');
+		$('span.ph').css('color','green'); //span태그이면서 클래스가 ph인 요소 선택
+		$('.ph.red').css('background','yellow'); //두 클래스 속성을 모두 갖는 요소 선택
+		
+		//여러 개 태그 선택
+		$('h1, h2').css('background','pink');
+		
+	});
+	
+	//$("선택자").메서드();
+	//$("선택자") => jquery개체를 반환함
+	
+</script>
+</head>
+<body>
+<h1>h1태그</h1>
+<h2>h2태그</h2>
+
+<p id='ph1'>문단</p>
+
+<p class='ph'>문단1</p>
+<p class='ph red'>문단2</p>
+<span class='ph'>안녕</span>
+
+
+</body>
+</html>

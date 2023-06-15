@@ -10,6 +10,10 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\ezen\Downloads\javascript\javascript\images"/>
+			<item value="C:\Users\ezen\Downloads\javascript\javascript\day3"/>
+			<item value="C:\Users\ezen\Downloads\javascript\javascript\day2"/>
+			<item value="C:\Users\ezen\Downloads\javascript\javascript\day1"/>
 			<item value="C:\Users\ezen\Desktop\images\images"/>
 			<item value="C:\Users\ezen\Desktop\images\audio"/>
 		</list>
@@ -17,5 +21,7 @@
 	<section name="ZipFileImportWizard">
 	</section>
 	<section name="PreferencesImportWizard">
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

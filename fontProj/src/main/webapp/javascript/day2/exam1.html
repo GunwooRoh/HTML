@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+   function getBiggerNum(){
+      var n1 = window.document.frm.num1.value;
+      var n2 = window.document.frm.num2.value;
+      
+      var num1 = parseInt(n1);
+      var num2 = Number(n2);
+      var result = ""
+      if(num1 > num2){
+         result = num1;
+      }else {
+         result = num2;
+      }
+      
+      alert("더 큰 수는 " + result + "입니다.")
+   }
+</script>
+</head>
+<body>
+   <h2>더 큰수 구하기</h2>
+   <hr>
+   <form name = "frm">
+   첫번째 수 입력<input type = "text" name = "num1"><br>
+   두번째 수 입력<input type = "text" name = "num2"><br>
+      <input type = "button" value = "더 큰수 구하기" onClick = "getBiggerNum()">
+   </form>
+
+
+</body>
+</html>

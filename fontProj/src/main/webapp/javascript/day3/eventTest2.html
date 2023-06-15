@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function emailCheck(){
+		var email2=document.frm1.email2.value;
+		if(email2==='etc'){
+			document.frm1.email3.value="";
+			document.frm1.email3.style.display="inline";
+			document.frm1.email3.focus();
+		}else{
+			document.frm1.email3.style.display="none";
+		}
+	}
+</script>
+</head>
+<body>
+<form name="frm1" method="post" action="test.jsp">
+	이메일 주소  <input type="text" name="email1">@
+	 <select name="email2" onchange="emailCheck()">
+	     <option value="naver.com">naver.com</option>
+	     <option value="hanmail.net">hanmail.net</option>
+	     <option value="nate.com">nate.com</option>
+		<option value="etc">직접입력</option>
+	 </select>
+	 
+	 <input type="text" name="email3"  style="display:none;"> 
+</form>
+
+</body>
+</html>

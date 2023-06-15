@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	/* $.each(배열, function(index, item){})
+	
+		배열과 객체를 순회할 목적의 메서드
+		for문을 대체
+	*/
+	$(document).ready(function(){
+		var arr=[10,20,30,40];
+		var str="";
+		$.each(arr, function(index, item){
+			str+="<p>"+ index +" - " + item + "</p>";
+		});
+		
+		$('#result').html(str);
+		
+		var arr2 = [
+			{name:'홍길동', age:20},
+			{name:'김길동', age:22},
+			{name:'이길동', age:23}			
+		];
+		
+		str="";
+		$.each(arr2, function(index, item){
+			str+= "<p>["+index+"] " + item.name +" : " + this['age'] +"</p>";
+		});
+		
+		$('#result2').html(str);
+	});
+</script>
+
+</head>
+<body>
+	<h1>$.each()</h1>
+	<div id="result"></div>
+	<hr>
+	<div id="result2"></div>
+</body>
+</html>
+
+
+
+

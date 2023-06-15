@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>appendTest.html</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var h1="<h1>제목1</h1>";
+		var h2="<h2>제목2</h2>";
+		
+		$('#p1').append(h1);
+		$('#p2').append(h1,h2);
+		
+		var arr=[
+			{name:'홍길동', id:'hong'},
+			{name:'김길동', id:'kim'},
+			{name:'이길동', id:'lee'}			
+		];
+		
+		$('div').append(function(index){
+			var item = arr[index];
+			var str=item.name + "-<b>" + item.id + "</b>";
+			
+			return str;
+		});
+		
+		//		
+		$('div').each(function(index, item) {
+			var item = arr[index];
+			var str = item.name + "-<b>" + item.id + "</b>";
+			$(this).append(str);
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="p1">p 태그입니다1.</p>
+	<p id="p2">p 태그입니다2.</p>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

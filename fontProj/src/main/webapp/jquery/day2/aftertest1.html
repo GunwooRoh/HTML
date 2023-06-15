@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+p {
+	background: pink
+}
+
+b {
+	color: green
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('b.link').append('(클릭  append)');
+		$('b.link').after('[클릭  AFTER]');
+		$('#sp2').prepend('(앞에 prepend)');
+		$('#sp2').before('[앞에 BEFORE]');
+	
+		$('#linkText').appendTo('p.link');
+		$('<span>(내부 뒤에 추가)</span>').appendTo('h1');
+	
+		$('p').before('<span>[p앞에 BEFORE]</span>');
+		$('p').prepend('<span>(p앞에 prepend)</span>');		
+	});
+</script>
+<body>
+	<b class="link">굵은 글자임</b>
+	<br />
+	<span id="linkText">[스팬 태그입니다]</span>
+	<br />
+	<span id="sp2" style="color: Blue">[조작메서드 연습]</span>
+	<br />
+	<p>p태그1</p>
+	<p class="link">p태그2</p>
+	<h1>h1태그</h1>
+
+
+</body>
+</html>

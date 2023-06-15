@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			$(this).html('클릭됨!');
+			alert('클릭 이벤트 발생!');
+			
+			$(this).off(); //이벤트 제거
+		})
+	});
+</script>
+</head>
+<body>
+	<button>버튼1</button><br>
+	<button>버튼2</button><br>
+	<button>버튼3</button><br>
+</body>
+</html>
+
+
+
+
+

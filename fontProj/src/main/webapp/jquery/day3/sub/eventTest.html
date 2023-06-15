@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div, a {	
+	padding: 10px;
+	border: 1px solid gray;
+}
+</style>
+
+<script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('a').click(function(){
+			$(this).css('background','pink');
+			event.preventDefault();
+			
+		});
+		
+		$('div').click(function(){
+			$(this).css('background','skyblue');			
+		})
+	});
+</script>
+</head>
+<body>
+    <div>
+        <a href="http://www.naver.com">naver</a>
+    </div>
+
+</body>
+</html>
+
+
+

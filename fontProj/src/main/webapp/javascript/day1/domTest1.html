@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function send(){
+	//[1] 이름으로 접근 - 계층적으로 접근
+	//window.document.form이름.input태그이름
+	var id=window.document.frm.userid.value;
+	
+	//[2] 아이디로 접근
+	var tel=document.getElementById("tel").value;
+	
+	alert("아이디 : " + id+", 전화번호:" + tel);
+}
+
+function drawBorder(){
+	//[3] 태그이름으로 접근 - 배열을 리턴함
+	var imgs = document.getElementsByTagName("img");
+	for(var i=0;i<imgs.length;i++){
+		imgs[i].style.border="5px solid green";
+	}//for
+}
+</script>
+
+</head>
+<body>
+<H3>회원가입</H3>
+<FORM NAME="frm">  
+아이디 <INPUT TYPE="text" name="userid" ><br>
+전화번호 <INPUT TYPE="text" name="tel" id="tel"><br>
+<INPUT TYPE="button"  value="확인" onClick="send()"> 
+</FORM>
+
+<hr>
+	<img src="../images/1.jpg" alt="펜션이미지1" style="border:7px solid red">
+	<img src="../images/2.jpg" alt="펜션이미지2">
+	<img src="../images/4.jpg" alt="펜션이미지3">
+
+	<button onclick="drawBorder()">이미지 테두리</button>
+</body>
+</html>
+
+
+
+
+
+
+
+

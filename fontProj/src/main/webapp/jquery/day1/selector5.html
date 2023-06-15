@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('tr:odd').css('background','yellow');
+		$('tr:gt(4)').css('font-size','25px');		
+		$('tr:last').css('color','red');
+		
+		$('tr:eq(2)').css('font-weight','bold').css('color','blue');
+		//=> 메서드 체이닝 - 메서드를 연속으로 사용
+		//jquery메서드는 반환값이 jquery개체이기 때문에 메서드를 이어서 사용할 수 있다
+		$('tr:contains(3)').css('color','orange');
+		$('p:nth-child(2n)').css('background','pink');
+		
+	});
+</script>
+</head>
+<body>
+	<h1>h1태그</h1>
+	<div>
+		<p>p태그</p>
+		<p>p태그</p>
+		<p>p태그</p>
+		<p>p태그</p>
+		<p>p태그</p>
+	</div>
+	
+	<table border="1" style="width: 400px">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>16</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

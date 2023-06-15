@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+   var d = new Date();
+   month1 = d.getMonth() + 1;
+   document.write(1900+d.getYear()+ "년" + month1+ "월" +d.getDate()+ "일"+"<br>");
+   
+   console.log(this); // window
+
+   var obj = {
+		   num: 10,
+		   printNum: function() {
+		     console.log(this.num);
+		   }
+		 };
+
+   obj.printNum(); // 10
+
+   function showComment() {
+	   console.log(this);
+	 }
+
+   showComment(); // window
+
+   function Developer() {
+	   console.log(this);
+	 }
+	 var dev = new Developer();
+
+	 with(document)
+     {
+	   write("hello<br>");
+	   write("안녕!!<br>");
+     }
+
+	 
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

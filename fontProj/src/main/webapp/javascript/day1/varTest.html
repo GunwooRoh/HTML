@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>변수</h1>
+
+<script type="text/javascript">
+	/* 변수 
+	- 변수 선언시 변수의 타입을 지정하지 않는다
+	- 코드를 실행할 때 자동으로 타입이 결정된다
+	- 선언하지 않고 사용하는 것도 가능하다 */
+	var a;
+	a=10;
+	console.log(a);
+	console.log(typeof a); //number
+	console.log(a.length);  //undefined
+	
+	a="hello";
+	console.log(a);
+	console.log(typeof a); //string
+	console.log(a.length); //5
+
+	a=true;
+	console.log(a);
+
+	//=> 유연하게 코드의 값을 바꿀 수 있다. 다양한 자료형의 값을 다시 할당하는 것도 가능
+	//변수의 타입 확인
+	console.log(typeof a);  //boolean
+
+	var v_global="전역변수";
+	
+	function funcVar(){
+		var v_local="지역변수";
+		document.write("<p>v_global="+ v_global +"</p>");
+		document.write("<p>v_local="+ v_local +"</p>");
+	}
+	
+	funcVar();
+	
+	//document.write("<p>함수 밖에서 v_local="+ v_local +"</p>"); //error:v_local is not defined
+	document.write("<p>함수 밖에서 v_global="+ v_global +"</p>");
+	
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

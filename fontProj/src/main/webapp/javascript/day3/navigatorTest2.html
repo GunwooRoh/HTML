@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var userAgent=navigator.userAgent;
+		var ua = userAgent.toLowerCase();
+		
+		console.log(ua);
+		document.getElementById("div1").innerHTML=ua;
+		
+		if(ua.indexOf("trident")!=-1){
+			alert("Internet Explorer입니다.");
+		}else if(ua.indexOf("edge")!=-1){
+			alert("Edge입니다");
+		}else if(ua.indexOf("whale")!=-1){
+			alert("Whale입니다");
+		}else if(ua.indexOf("firefox")!=-1){
+			alert("Firefox입니다");
+		}else{
+			alert("기타 브라우저입니다.");
+		}//if
+		
+	}
+</script>
+</head>
+<body>
+<h1>브라우저 판별</h1>
+
+<div id="div1"></div>
+
+</body>
+</html>

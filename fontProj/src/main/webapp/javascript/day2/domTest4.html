@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>domTest4_2.html</title>
+
+<script type="text/javascript">
+function applyStyle(){
+	var liEls=document.getElementsByTagName("li");
+	for(var i=0;i<liEls.length;i++){
+		liEls[i].style.backgroundColor="yellow";	
+	}
+	
+	var lang = document.getElementById("lang");
+	var list=lang.getElementsByTagName("li");
+	for(var i=0;i<list.length;i++){
+		list[i].style.color="blue";
+	}
+}	
+</script>
+
+</head>
+<body onload="applyStyle()">
+  <ul id="lang">
+	<li>java</li>
+	<li>jsp</li>
+	<li>oracle</li>
+  </ul>
+
+<hr>
+  <ul id="lang2">
+	<li>java</li>
+	<li>jsp</li>
+	<li>oracle</li>
+  </ul>
+
+<hr>
+
+
+</body>
+</html>
+
+
+
+
+

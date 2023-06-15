@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssTest1.html</title>
+<style>
+.winter {
+	border: 7px solid silver;
+}
+.summer {
+	border: 7px solid lightblue;
+}
+
+.p1{color:red;font-size:10pt;}
+.p2{color:blue;font-size:20pt;}
+.p3{color:green;font-size:30pt;}
+
+</style>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('span').css({'background':'pink', 
+					'color':'blue', 'font-weight':'bold'});
+		$('#img1').addClass('winter').css('width','200');
+		
+		$('button:eq(0)').click(function(){
+			$('#img1').toggleClass('summer');
+		});
+		
+		$('button:eq(1)').click(function(){
+			$('#img1').removeClass('winter');
+		});
+		
+		$('p').addClass(function(index){
+			return 'p'+(index+1);
+		});
+		
+		//
+		$('p').each(function(index, item){
+		   $(this).addClass('p'+(index + 1));
+		});
+	});
+</script>
+</head>
+<body>
+  <span>CSS 관련 메서드</span> <br /><br />  
+  <div id="Mt">
+    <img id="img1" src="../images/magnum2.jpg" />
+  </div>
+  <button>토글</button>
+  <button>removeClass</button>
+
+<hr>
+    <p>문단1</p>
+    <p>문단2</p>
+    <p>문단3</p>
+
+
+</body>
+</html>

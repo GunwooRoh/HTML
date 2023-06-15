@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('p').html('p태그입니다.');
+		
+		/* $('div').html(function(index){
+			return "<p>문단 - " + index +"</p>";
+		});
+		
+		$('h2').html(function(index, html){ //두번째 매개변수에 원래 있던 html의 내용이 들어감
+			return "["+ html +"]";
+		}); */
+		
+		$('div').each(function(index, item) {
+	        $(this).html("<p>문단 - " + index + "</p>");
+	     });
+	     
+	     $('h2').each(function(index, item) {
+	        var str = $(this).html();
+	        $(this).html("["+str+"]");
+	     });
+	});
+</script>
+</head>
+<body>
+	<p></p>
+	<p></p>
+	<p></p>
+<hr>
+	
+    <div></div>
+    <div></div>
+    <div></div>
+    
+    <h2>제목1</h2>
+    <h2>제목2</h2>
+    <h2>제목3</h2>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+            
+            margin: 0 auto;
+        }
+        .heading{
+            padding-left: 15px;
+            font-size: 0.8em;
+        }
+
+        ul{
+            list-style: number;
+
+        }
+
+        li{
+            padding: 5px;
+            font-size: 0.8em;
+        }
+
+        li::marker{
+            color:rgb(255, 122, 145);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .pink{
+            color:rgb(255, 122, 145);
+            font-weight: bold;
+        }
+
+        .position{
+            position: relative;
+            left: 50px;
+        }
+
+        .gray{
+            color: rgba(62, 61, 61, 0.5);
+        }
+
+        .view{
+            position: relative;
+            left: 40px;
+            top: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="heading"><strong>많이 본 뉴스</strong>
+            &nbsp;&nbsp;<span class="pink">TV연예</span>&nbsp;&nbsp;&nbsp;<span class="gray">종합</span><img class="view" src="../image/3.PNG"></div>
+        <div>
+            <ul>
+                <li>1번째 컨텐츠 입니다.</li>
+                <li>2번째 컨텐츠 입니다.</li>
+                <li>3번째 컨텐츠 입니다.</li>
+                <li>4번째 컨텐츠 입니다.</li>
+                <li>5번째 컨텐츠 입니다.</li>
+                <li>6번째 컨텐츠 입니다.</li>
+                <li>7번째 컨텐츠 입니다.</li>
+                <li>8번째 컨텐츠 입니다.</li>
+                <li>9번째 컨텐츠 입니다.</li>
+                <li>10번째 컨텐츠 입니다.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

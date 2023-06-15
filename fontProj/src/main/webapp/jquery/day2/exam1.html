@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//1
+		$('div:not("#selInfo")').css('color', 'blue');
+		
+		//2
+		$('div:not("#selInfo")').each(function(idx, item) {
+			$(this).html('div' + (idx + 1) * 100)
+				.css('border', (idx + 1) + 'px solid green');
+		});
+
+		//3
+		alert("span태그의 첫번째 텍스트:"+$('span').html());
+		
+		//4
+		var str = '';
+		$('span').each(function(idx, item) {
+			str += $(this).html() + "\n";
+		});
+		alert(str);
+
+		//5
+		$('input[type=button]:first').click(function() {
+			str = '';
+			$('select[name=sel1] > option:selected').each(function(idx, item) {
+				str += $(item).html() + "<br>";
+			});
+			
+			$('#selInfo').html(str);
+		});
+
+	});
+</script>
+
+</head>
+<body>
+	<h1>each실습</h1>
+	<div>div태그1</div>
+	<div>div태그2</div>
+	<div>div태그3</div>
+	<div>div태그4</div>
+	<br>
+	
+	<span>span태그1</span>
+	<span>span태그2</span>
+	<span>span태그3</span>
+	<br>
+	<hr>
+	
+	<select name='sel1' multiple="multiple">
+		<option>java</option>
+		<option>jsp</option>
+		<option>spring</option>
+		<option>oracle</option>
+	</select>
+	
+	<input type="button" value='선택'>
+	<br>
+	<div id="selInfo"></div>
+</body>
+</html>

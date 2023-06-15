@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+  <ul id="lang">
+	<li>java</li>
+	<li>jsp</li>
+	<li>oracle</li>
+  </ul>
+
+<hr>
+  <ul id="lang2">
+	<li>java</li>
+	<li>jsp</li>
+	<li>oracle</li>
+  </ul>
+
+<hr>
+<table width="500" border="1">
+  <tr>
+      <td>제목1</td>
+      <td>제목2</td>            
+  </tr>
+  <tr onMouseOver="this.style.backgroundColor='#e8e8ff';this.style.cursor='pointer'" 
+  	onMouseOut="this.style.backgroundColor=''">
+      <td>내용1</td>
+      <td>내용2</td>            
+  </tr>
+  <tr onMouseOver="this.style.backgroundColor='#e8e8ff';this.style.cursor='pointer'" 
+  	onMouseOut="this.style.backgroundColor=''">
+      <td>내용1</td>
+      <td>내용2</td>            
+  </tr>        
+</table>
+
+<script type="text/javascript">
+	var liEls=document.getElementsByTagName("li");
+	for(var i=0;i<liEls.length;i++){
+		liEls[i].style.backgroundColor="yellow";	
+	}
+	
+	var lang = document.getElementById("lang");
+	var list=lang.getElementsByTagName("li");
+	for(var i=0;i<list.length;i++){
+		list[i].style.color="blue";
+	}
+	
+</script>
+</body>
+</html>
+
+
+
+
+

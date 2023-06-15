@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample.html</title>
+<script type="text/javascript">
+	function send(){
+		window.opener.document.frmtest.address.value=document.frm1.dong.value;
+		self.close();
+	}
+	
+	function sam(){
+		opener.document.bgColor="skyblue";
+	}
+</script>
+</head>
+<body>
+<h1>자식창</h1>
+<A HREF="#" onclick="sam()">원래창의 배경색 바꾸기</A>
+<form name="frm1">
+주소 입력 : <input type="text" name = "dong">
+<input type="button" value="확인" onclick="send();">
+</form>
+
+</body>
+</html>

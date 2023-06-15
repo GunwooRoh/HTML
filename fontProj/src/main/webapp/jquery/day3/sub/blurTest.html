@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>blurTest.html</title>
+<style type="text/css">
+	.error{	color:red;font-size:0.8em;}
+</style>
+
+<script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.error').hide();
+		
+		$('.infobox').blur(function(){
+			if($(this).val().length<1){
+				$(this).parent().find('.error').show();		
+			}else{
+				$(this).next('.error').hide();
+			}
+		});
+		
+		$('#submit1').click(function(){
+			/* 
+			if($('#userid').val().length<1){
+				$('#userid').next('.error').show();
+				$('#userid').focus();
+				event.preventDefault();
+			}
+			if($('#pwd').val()===''){
+				$('#pwd').parent().find('.error').show();
+				$('#pwd').focus();
+				event.preventDefault();
+			}
+			if(!$('#name').val()){
+				$('#name').parent().find('.error').show();
+				$('#name').focus();
+				event.preventDefault();
+			} */
+			
+			/* $('.infobox').each(function(index, item){
+				if($(this).val().length<1){
+					$(this).parent().find('.error').show();
+					$(this).focus();
+					event.preventDefault();
+				}
+			});
+			 */
+			 
+			$('.infobox').each(function(index, item){
+				if($(this).val().length<1){
+					alert($(this).prev().text() +'을(를) 입력하세요');
+					$(this).focus();
+					event.preventDefault();
+					return false;
+				}
+			});
+		});
+		
+		
+	});
+</script>
+</head>
+<body>
+
+<form id="signup" method="post" action="a.jsp">  
+<div>
+	<label class="label" for="userid">User Id *</label>
+	<input type="text"  class="infobox" id="userid" />
+	<span class="error">필수 입력항목입니다</span>
+</div>	
+<div>
+	<label class="label" for="pwd">Password *</label>
+	<input type="password" class="infobox" id="pwd" />
+	<span class="error">필수 입력항목입니다</span>
+</div>	
+<div>
+	<label class="label" for="name">Name *</label>
+	<input type="text" class="infobox" id="name" />
+	<span class="error">필수 입력항목입니다</span>
+</div>	
+<input id="submit1" type="submit" value="전송">
+</form>
+
+
+</body>
+</html>

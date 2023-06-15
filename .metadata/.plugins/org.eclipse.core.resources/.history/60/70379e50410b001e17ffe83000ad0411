@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("html() 결과 => " + $('#sp1').html());  //태그도 같이 반환
+		console.log("text() 결과 => " + $('#sp1').text());  //text만 반환
+		
+		console.log("span html() 결과 => " + $('span').html());  //첫번째 요소의 값만 반환
+		console.log("span text() 결과 => " + $('span').text());  //모든 요소의 텍스트를 결합해서
+		
+		$('#sp1').html("<u>html로 값 넣기</u>");  //태그가 적용됨
+		$('span:eq(1)').text("<u>text로 값 넣기</u>");  //태그가 화면에 출력됨
+				
+	});
+</script>
+</head>
+<body>
+	<span id="sp1"><b>test중</b></span><br>
+    <span><b>span 태그입니다</b></span><br>
+
+</body>
+</html>
+
+

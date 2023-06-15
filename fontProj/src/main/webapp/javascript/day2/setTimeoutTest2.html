@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var timer_id;
+	
+	function startTime(){
+		var d = new Date();
+		document.getElementById("curTime").innerHTML="<h2>"+ d.getHours()+ " : "
+			+ d.getMinutes() +" : " + d.getSeconds() +"</h2>";
+		
+		timer_id=setTimeout("startTime()", 1000);
+		console.log(timer_id);
+	}
+	
+	function stopTime(){
+		clearTimeout(timer_id);
+	}
+</script>
+</head>
+<body>
+<H1> setTimeout 과 clearTimeout 예 </H1>
+<FORM>
+<INPUT TYPE="button" VALUE="시간 표시" onClick="startTime()">
+<INPUT TYPE="button" VALUE="시간 중지" onClick="stopTime()">
+</FORM>
+<div id="curTime"></div>
+
+</body>
+</html>

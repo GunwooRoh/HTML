@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>setIntervalTest.html</title>
+<script type="text/javascript">
+	var timer_id;
+	
+	function displayTime(){
+		var today=new Date();
+		document.getElementById("curTime").innerHTML = "<h3>"+today.getHours()+"시 "
+			+ today.getMinutes() +"분 " + today.getSeconds()+"초</h3>";
+	}
+	
+	function startTime(){
+		timer_id=setInterval("displayTime()", 1000);
+		console.log(timer_id);
+	}
+	
+	function stopTime(){
+		clearInterval(timer_id);
+	}
+</script>
+</head>
+<body>
+<H2> setInterval 과 clearInterval 예 </H2>	
+<FORM>
+	<INPUT TYPE="button" VALUE="시간 표시" onClick="startTime()">
+	<INPUT TYPE="button" VALUE="시간 중지" onClick="stopTime()"><br><br>
+</FORM>
+
+<div id="curTime"></div>
+
+</body>
+</html>

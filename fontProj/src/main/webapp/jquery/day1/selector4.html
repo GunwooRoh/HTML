@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a[title]').css('color','orange'); //title속성을 갖는 a태그 선택
+		
+		$('input[type=text]').val('속성선택자'); //type속성이 text인 input태그 선택
+	});
+</script>
+</head>
+<body>
+	<a href="#" title="빈링크">안녕</a><br>
+	<a href="jqTest1.html">jqTest1 이동</a><br><br>
+	<hr>
+	<input type="text">
+	<input type="password">
+	<input type="radio">
+	<input type="checkbox">
+</body>
+</html>
+
+

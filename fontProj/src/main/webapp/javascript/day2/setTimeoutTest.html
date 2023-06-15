@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var mywin;
+	
+	function winOpen(){
+		mywin=window.open("","win",
+			"width=200,height=200,left=10,top=100,location=yes,resizable=yes");
+		mywin.document.write("이 창은 2초가 지나면 자동으로 닫힙니다.");
+		
+		setTimeout("mywin.close()", 2000);
+	}	
+</script>
+</head>
+<body onload="winOpen()">
+<h1>부모창!</h1>
+</body>
+</html>
+
+
+

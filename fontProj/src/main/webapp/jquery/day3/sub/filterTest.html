@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('div').filter(':odd')
+			.eq(0).css('background','orange')
+			.end()
+			.eq(1).css('background',"skyblue")
+			.end()
+			.css('color','red');
+		
+		/* end() - 방금 일어난 작업 직전의 상태로 되돌림 */
+		
+		/* 셀렉터는 문서상에 존재하는 개체들을 대상으로 검색한다면, 
+		추가 필터링 메서드들은 메모리상에 존재하는 개체 집합을 대상으로 필터링을 한다 */
+		
+		$('h3').filter(function(index){
+			return index % 3 ==0;
+		}).css({
+			background:'black',
+			color:'white'
+		});
+	});
+</script>
+</head>
+<body>
+    <h3>Header-0</h3>
+    <h3>Header-1</h3>
+    <h3>Header-2</h3>
+    <h3>Header-3</h3>
+    <h3>Header-4</h3>
+    <h3>Header-5</h3>
+
+	<hr>
+	<div>div태그1</div>
+	<div>div태그2</div>
+	<div>div태그3</div>
+	<div>div태그4</div>
+	<div>div태그5</div>
+	<div>div태그6</div>
+	
+</body>
+</html>

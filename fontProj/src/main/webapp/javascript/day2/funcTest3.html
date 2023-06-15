@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>funcTest3.html</title>
+<script type="text/javascript">
+	var a = 10;
+	
+	function getA() {
+		var a = 20;
+		console.log(a);  //20
+		
+		if(a==20){
+			var b=30;
+			console.log(b);  //30		  
+		}
+		console.log("함수안 b="+b);  //30		  
+	}
+	
+	getA(); 
+	console.log(a); // 10
+	console.log("함수 밖 b="+b);  //error	
+</script>
+</head>
+
+<body>
+<h1>변수의 scope</h1>
+
+</body>
+</html>
