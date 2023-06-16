@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1.html</title>
+</head>
+<body>
+	<fieldset>
+	    <table
+            border="1"
+            width="50%"
+            height="200">
+            
+            
+            <div align = "left">
+				<caption align = "" fontsize = "30">자유게시판 - 글 목록</caption>
+            </div>
+            
+            <thead>
+                <tr align="center" bgcolor="lightgray">
+            
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            		<div align = "center">
+            		<th>1</th>
+            		</div>    
+           
+           
+            </tbody>
+        </table>
+	
+	
+	
+	
+	</fieldset>
+</body>
+
+</html>

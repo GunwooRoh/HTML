@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div{
+    width: 200px; 
+    height: 140px; 
+    border: 1px solid gray; 
+    text-align:center;
+}
+</style>
+<script type="text/javascript" src="../../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div img').mouseenter(function(){
+			$(this).fadeTo('slow', 0.2);
+		}).mouseleave(function(){
+			$(this).fadeTo('slow', 1);			
+		});
+	});
+</script>
+</head>
+<body>
+    <div>
+        <img src="../../images/dog.jpg" alt="강아지 이미지">
+    </div>
+
+</body>
+</html>

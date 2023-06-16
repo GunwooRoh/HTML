@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1.html</title>
+</head>
+<body>
+	<fieldset>
+	<div>
+	<input type = "table">
+	
+	</div>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>propTest.html</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/* $('#chkAll').change(function(){
+			if(this.checked){
+				$('#chkItem').children('input[type=checkbox]').prop('checked',true);
+				//javascript의 checked 속성에 true지정
+				//javascript 속성의 값을 지정할 때는 prop()메서드 이용
+				//html의 속성은 attr()이용
+			}else{
+				$('#chkItem input[type=checkbox]').prop('checked',false);
+			}
+		}); */
+		
+		$('#chkAll').click(function(){
+			$('#chkItem').children('input[type=checkbox]').prop('checked', this.checked);			
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<input type="checkbox" id="chkAll" /><label for="chkAll">All</label>
+    
+    <div id="chkItem">
+        <input type="checkbox" id="chk1"/><label for="chk1">참외</label>
+        <input type="checkbox" id="chk2"/><label for="chk2">자두</label>
+        <input type="checkbox" id="chk3"/><label for="chk3">수박</label>
+    </div>
+
+</body>
+</html>

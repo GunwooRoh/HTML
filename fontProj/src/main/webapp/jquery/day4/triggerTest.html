@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn').on('click',function(){
+			alert('버튼 클릭됨!');
+		});
+		
+		//페이지 로드시 사용자의 반응이 아닌 코드에 의해서 click 이벤트를 실행
+		$('#btn').trigger('click');
+		
+		$('#img1').one('click',function(){
+			alert('이미지는 한번만 클릭하세요!');
+		});
+		
+		$('p').hover(function(){
+			$(this).css('background','pink');
+		}, function(){
+			$(this).css('background','');			
+		});
+	});
+</script>
+</head>
+<body>
+<div id="my">
+    <input type="button" id="btn" value="버튼" >
+	<img id="img1" src='../images/dog.jpg'>
+</div>
+
+<hr>
+	<p>Hello JQuery</p>
+	<p>안녕</p>
+
+</body>
+</html>
