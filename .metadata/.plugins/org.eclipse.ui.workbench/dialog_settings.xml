@@ -10,6 +10,7 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\ezen\Desktop"/>
 			<item value="C:\Users\ezen\Downloads\day4\day4"/>
 			<item value="C:\Users\ezen\Downloads\javascript\javascript\images"/>
 			<item value="C:\Users\ezen\Downloads\javascript\javascript\day3"/>
@@ -24,5 +25,9 @@
 	<section name="PreferencesImportWizard">
 	</section>
 	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.server.ui.new.server"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.server.ui"/>
+		</list>
 	</section>
 </section>
